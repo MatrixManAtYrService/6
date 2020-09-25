@@ -2,7 +2,7 @@ import conducto as co
 
 def go() -> co.Serial:
     with co.Serial() as node:
-        co.Exec("echo hi", name='node')
+        co.Exec("echo hi there", name='node')
     return node
 
 if __name__ == "__main__":
